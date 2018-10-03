@@ -53,3 +53,38 @@ console.log(templateStr);
 const concatenatedStr = 'I am ' + 'concatenated';
 
 console.log(concatenatedStr);
+
+const strNumber = '48';
+
+console.log(strNumber);
+
+const number = 48;
+
+console.log(number);
+console.log(typeof strNumber);
+console.log(typeof number);
+
+const integer = 8;
+
+const float = 3.14;
+
+console.log(integer);
+console.log(float);
+console.log(typeof integer);
+console.log(typeof float);
+
+const addNumbers = 5 + 5;
+const divideNumbers = 5 / 5;
+const multiplyNumbers = 5 * 5;
+const remainder = 12 % 5;
+
+console.log(addNumbers);
+console.log(divideNumbers);
+console.log(multiplyNumbers);
+console.log(remainder);
+
+const myBoolTrue = true;
+const myBoolFalse = false;
+
+console.log(myBoolTrue);
+console.log(myBoolFalse);
