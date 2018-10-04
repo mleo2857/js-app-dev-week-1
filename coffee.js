@@ -1,4 +1,4 @@
-let numberOfCups = 2;
+let numberOfCups = 3;
 
 if (numberOfCups < 3){
   console.log('Yes I\'ll take another cup of coffee');
