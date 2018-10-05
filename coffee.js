@@ -5,3 +5,6 @@ if (numberOfCups < 3){
 } else {
   console.log('I think I\'m ok for now');
 }
+
+
+// Can use const intead of let if you don't plan on re-assigning variable
