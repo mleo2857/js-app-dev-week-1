@@ -5,47 +5,64 @@ let plr_two_wins = 0;
 
 var weapons = ['rock' , 'paper', 'scissors'];
 
+function getWinner (plr_one_throw, plr_two_throw){
+  if (plr_one_throw === plr_two_throw){
+    console.log('draw');
+  } else if (plr_one_throw === 'rock' && plr_two_throw === 'scissors' ||
+              plr_one_throw === 'scissors' && plr_two_throw === 'paper' ||
+              plr_one_throw === 'paper' && plr_two_throw === 'rock'){
+                console.log(plr_one + ' wins');
+                plr_one_wins += 1;
+              }else {
+                console.log(plr_two + ' wins');
+                plr_two_wins += 1;
+              }
+}
+
 while (true){
   let plr_one_throw = weapons[parseInt(Math.random()*weapons.length) %3];
   let plr_two_throw = weapons[parseInt(Math.random()*weapons.length) %3];
   console.log(plr_one + ' throws ' + plr_one_throw);
   console.log(plr_two + ' throws ' + plr_two_throw);
 
-  switch (plr_one_throw){
-    case ('rock'):
-      if (plr_two_throw == 'paper'){
-        console.log(plr_two + ' wins');
-        plr_two_wins += 1;
-      } else if (plr_two_throw == 'scissors'){
-        console.log(plr_one + ' wins');
-        plr_one_wins += 1;
-      } else {
-        console.log('draw');
-      }
-      break;
-    case ('paper'):
-      if (plr_two_throw == 'scissors'){
-        console.log(plr_two + ' wins');
-        plr_two_wins += 1;
-      } else if (plr_two_throw == 'rock'){
-        console.log(plr_one + ' wins');
-        plr_one_wins += 1;
-      } else {
-        console.log('draw');
-      }
-      break;
-    case ('scissors'):
-      if (plr_two_throw == 'rock'){
-        console.log(plr_two + ' wins');
-        plr_two_wins += 1;
-      } else if (plr_two_throw == 'paper'){
-        console.log(plr_one + ' wins');
-        plr_one_wins += 1;
-      } else {
-        console.log('draw');
-      }
-      break;
-  }
+  getWinner(plr_one_throw, plr_two_throw);
+
+
+  // switch (plr_one_throw){
+  //   case ('rock'):
+  //     if (plr_two_throw == 'paper'){
+  //       console.log(plr_two + ' wins');
+  //       plr_two_wins += 1;
+  //     } else if (plr_two_throw == 'scissors'){
+  //       console.log(plr_one + ' wins');
+  //       plr_one_wins += 1;
+  //     } else {
+  //       console.log('draw');
+  //     }
+  //     break;
+  //   case ('paper'):
+  //     if (plr_two_throw == 'scissors'){
+  //       console.log(plr_two + ' wins');
+  //       plr_two_wins += 1;
+  //     } else if (plr_two_throw == 'rock'){
+  //       console.log(plr_one + ' wins');
+  //       plr_one_wins += 1;
+  //     } else {
+  //       console.log('draw');
+  //     }
+  //     break;
+  //   case ('scissors'):
+  //     if (plr_two_throw == 'rock'){
+  //       console.log(plr_two + ' wins');
+  //       plr_two_wins += 1;
+  //     } else if (plr_two_throw == 'paper'){
+  //       console.log(plr_one + ' wins');
+  //       plr_one_wins += 1;
+  //     } else {
+  //       console.log('draw');
+  //     }
+  //     break;
+  // }
 
   if (plr_one_wins == 3){
     console.log(plr_one + ' has won the game');

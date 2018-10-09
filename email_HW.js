@@ -76,3 +76,11 @@ emailApp.outgoing_emails[2] = {
 }
 
 console.log(emailApp.outgoing_emails[2]);
+
+for (var i of emailApp.outgoing_emails){
+  console.log(i.subject);
+}
+
+for (var i in emailApp){
+  console.log(i);
+}
