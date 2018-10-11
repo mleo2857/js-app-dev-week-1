@@ -45,9 +45,9 @@ function playGame(playerOne, playerTwo, playUntil){
     }
   }
   if (playerOneWins > playerTwoWins){
-    return playerOne;
+    return playerOne.name + ' wins';
   } else{
-    return playerTwo;
+    return playerTwo.name + ' wins';
   }
 }
 
