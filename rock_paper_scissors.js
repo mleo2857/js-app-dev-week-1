@@ -64,10 +64,10 @@ while (true){
   //     break;
   // }
 
-  if (plr_one_wins == 3){
+  if (plr_one_wins === 3){
     console.log(plr_one + ' has won the game');
     break;
-  } else if (plr_two_wins == 3){
+  } else if (plr_two_wins === 3){
     console.log(plr_two + ' has won the game');
     break;
   } else {
