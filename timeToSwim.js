@@ -1,5 +1,5 @@
 let temp = 50;
-let precipitation = '';
+let precipitation = 'snowing';
 let indoors = true;
 
 console.log('The temperature is ' + temp + ' degrees');

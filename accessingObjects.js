@@ -39,7 +39,7 @@ console.log(course.name);
 console.log(course.teachers[1]);
 console.log(course.students[0].name);
 console.log(course.students[1].computer.type);
-console.log(course.preReqs);
+console.log(course.preReqs.equipment);
 console.log(course.preReqs.equipment.OSOptions[1]);
 console.log(course.preReqs.equipment.OSOptions.join(' or '));
 
